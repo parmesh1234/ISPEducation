@@ -1,0 +1,20 @@
+[
+	{
+		"setId":1,
+		"MainTopic":"Number sense",
+		"SubTopics": ["Place Value & Rounding",
+					  "Addition Word Problems with Missing Addends", 
+					  "Word Problem about Comparing", 
+					  "Percentages"]
+	},
+	{
+		"setId":2,
+		"MainTopic":"Mixed Operations",
+		"SubTopics": ["Add, subtract, multiply and divide", 
+					"Addition, subtraction, multiplication and division: word problems", 
+					"Multi-step word problems", 
+					"Word problems with extra or missing information",
+					"Add and subtract numbers ending in zeroes",
+					"Solve word problems using guess-and-check"]
+	}
+]

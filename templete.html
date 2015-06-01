@@ -1,0 +1,49 @@
+<div class="quiz-area" ng-show="inProgress">
+	<div ng-show="!quizOver">
+		<h3 id="question">&nbsp;&nbsp;&nbsp;{{question}}</h3>
+		<ul id="options">
+			<li ng-repeat="option in options">
+				<label>
+					<input type="radio" name="answer" value="{{option}}">
+					<span class="spOpt">{{option}}</span>
+				</label>
+			</li>
+		</ul>
+		<div id="score">
+			<h4>Score: {{score}}</h4>
+		</div>
+		<div class="padBut">
+			<button ng-click="checkAnswer()" ng-show="answerMode" class="casBut">Submit</button>
+		</div>
+		<div class="padBut">
+			<div ng-show="!answerMode">
+				<button ng-click="nextQuestion()" class="next-question casBut">Next</button>
+				<span ng-show="correctAns" class="corSp" style="color:rgb(13,197,179);font-size:30px;">&nbsp;&nbsp;That is correct!</span>
+				<span ng-show="!correctAns" class="corSp">
+					<div class="review">
+						<p style="color:rgb(13,197,179);font-size:30px;" class="sorry">Sorry, that is an incorrect answer.</p>
+						<span style="color:green;">The Correct Answer is: {{options[answer]}}</span>
+						<br>
+						<span style="color:#ff6600;">The Solution:</span>
+						
+						<h4>{{explain}}</h4><br>
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div ng-show="quizOver">
+		<h2>Your Score is {{score}}</h2>
+		<a href="#/home/SampleTest/4"><button class="dasBut">Back to DashBoard</button></a>
+	</div>
+
+	<!--<div id="score">
+		<h4>Score: {{score}}</h4>
+	</div>-->
+</div>
+
+<div class="intro padBut" ng-show="!inProgress">
+	<h2 class="">Place Value & Rounding </h2>
+	<button id="startQuiz" ng-click="start()" class="casBut">Start</button>
+</div>

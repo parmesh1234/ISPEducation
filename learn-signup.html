@@ -1,0 +1,242 @@
+<div class="ContentPlaceHolder1">
+    <div id="ctl00_ContentPlaceHolder1_Panel_Default">
+	    <div id="ctl00_ContentPlaceHolder1_pnl_registration" class="row">
+            <div class="container">
+                <div class="signup-container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1" style="padding-bottom: 30px; background: #F7F7F7;
+                            border-radius: 5px; box-shadow: 2px 2px 2px 2px #ccc;">
+                            <div class="col-md-8">
+                                <div class="row" style="margin: 10px 0;">
+                                    <h3 class="regular-header">
+                                        Sign Up with Email
+                                    </h3>
+                                    <form role="form" name="myForm">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" maxlength="50" name="fname" ng-model="fname" class="form-control input-sm" placeholder="First Name" required>
+                                                <span style="color:red" ng-show="myForm.fname.$dirty && myForm.fname.$invalid">
+                                                    <span ng-show="myForm.fname.$error.required">First Name is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" maxlength="50" name="lname" ng-model="lname" class="form-control input-sm" placeholder="Last Name" required>
+                                                <span style="color:red" ng-show="myForm.lname.$dirty && myForm.lname.$invalid">
+                                                    <span ng-show="myForm.lname.$error.required">Last Name is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <div>
+		                                            <input type="email" maxlength="255" name="emaila" ng-model="emaila" class="form-control input-sm" placeholder="Email Address" required>
+                                                    <span style="color:red" ng-show="myForm.emaila.$dirty && myForm.emaila.$invalid">
+                                                        <span ng-show="myForm.emaila.$error.required">Email is Required.</span>
+                                                        <span ng-show="myForm.emaila.$error.email">Invalid Email Address.</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" size="20" class="riTextBox riEmpty form-control" name="phno" ng-model="phno" placeholder="Enter Mobile No" style="height:30px;" required>
+                                                <span style="color:red" ng-show="myForm.phno.$dirty && myForm.phno.$invalid">
+                                                    <span ng-show="myForm.phno.$error.required">Phone No is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" size="20" class="riTextBox riEmpty form-control" name="dob" ng-model="dob" placeholder="Enter Date of Birth" style="height:30px;" required>
+												<span style="color:red" ng-show="myForm.dob.$dirty && myForm.dob.$invalid">
+                                                    <span ng-show="myForm.dob.$error.required">Date of Birth is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                	<option value="Select Gender">Select Gender</option>
+                                                	<option value="1">Male</option>
+                                                	<option value="2">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" maxlength="32" name="password" ng-model="password" class="form-control input-sm" placeholder="Password" required>
+                                                <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+                                                    <span ng-show="myForm.password.$error.required">Password is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" maxlength="32" name="passwordr" ng-model="passwordr" class="form-control input-sm" placeholder="Confirm Password" required>
+                                                <span style="color:red" ng-show="myForm.passwordr.$dirty && myForm.passwordr.$invalid">
+                                                    <span ng-show="myForm.passwordr.$error.required">Password is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <select tabindex="9" class="form-control">
+													<option value="Select Category">Select Category</option>
+													<option value="1">Student</option>
+													<option value="2">Parent</option>
+												</select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" maxlength="120" name="add1" ng-model="add1" class="form-control" placeholder="Address1" required>
+                                                <span style="color:red" ng-show="myForm.add1.$dirty && myForm.add1.$invalid">
+                                                    <span ng-show="myForm.add1.$error.required">Address is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" maxlength="120" name="add2" ng-model="add2" class="form-control" placeholder="Address2" required>
+                                                <span style="color:red" ng-show="myForm.add2.$dirty && myForm.add2.$invalid">
+                                                    <span ng-show="myForm.add2.$error.required">Address is Required.</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+		                                <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" maxlength="32" name="city" ng-model="city" class="form-control" placeholder="Enter City" required>
+                                                        <span style="color:red" ng-show="myForm.city.$dirty && myForm.city.$invalid">
+                                                            <span ng-show="myForm.city.$error.required">City is Required.</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <div>
+                                                            <select tabindex="13" class="form-control" placeholder="Select State">
+				<option value="Select State">Select State</option>
+				<option value="AL">Alabama                                           </option>
+				<option value="AK">Alaska                                            </option>
+				<option value="AZ">Arizona                                           </option>
+				<option value="AR">Arkansas                                          </option>
+				<option value="CA">California                                        </option>
+				<option value="CO">Colorado                                          </option>
+				<option value="CT">Connecticut                                       </option>
+				<option value="DE">Delaware                                          </option>
+				<option value="FL">Florida                                           </option>
+				<option value="GA">Georgia                                           </option>
+				<option value="HI">Hawaii                                            </option>
+				<option value="ID">Idaho                                             </option>
+				<option value="IL">Illinois                                          </option>
+				<option value="IN">Indiana                                           </option>
+				<option value="IA">Iowa                                              </option>
+				<option value="KS">Kansas                                            </option>
+				<option value="LA">Louisiana                                         </option>
+				<option value="ME">Maine                                             </option>
+				<option value="MD">Maryland                                          </option>
+				<option value="MA">Massachusetts                                     </option>
+				<option value="MI">Michigan                                          </option>
+				<option value="MN">Minnesota                                         </option>
+				<option value="MS">Mississippi                                       </option>
+				<option value="MO">Missouri                                          </option>
+				<option value="MT">Montana                                           </option>
+				<option value="NE">Nebraska                                          </option>
+				<option value="NV">Nevada                                            </option>
+				<option value="NH">New Hampshire                                     </option>
+				<option value="NJ">New Jersy                                         </option>
+				<option value="NM">New Mexico                                        </option>
+				<option value="NY">New York                                          </option>
+				<option value="NC">North Corolina                                    </option>
+				<option value="ND">North Dakota                                      </option>
+				<option value="OH">Ohio                                              </option>
+				<option value="OK">Oklahoma                                          </option>
+				<option value="OR">Oreqon                                            </option>
+				<option value="PA">Pennsylvania                                      </option>
+				<option value="RI">Rhode Island                                      </option>
+				<option value="SC">South Carolina                                    </option>
+				<option value="SD">South Dakota                                      </option>
+				<option value="TN">Tennessee                                         </option>
+				<option value="TX">Texas                                             </option>
+				<option value="UT">Utah                                              </option>
+				<option value="VT">Vermont                                           </option>
+				<option value="VA">Virginia                                          </option>
+				<option value="WA">Washington                                        </option>
+				<option value="WV">West Virginia                                     </option>
+				<option value="WI">Wisconsin                                         </option>
+				<option value="WY">Wyoming                                           </option>
+				<option value="KY">Kentucky                                          </option>
+			</select>
+        </div>
+        </div>
+        </div>
+        </div>
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" maxlength="5" name="zipcode" ng-model="zipcode" class="form-control" autocomplete="off" placeholder="Zip Code" required>
+                                                        <span style="color:red" ng-show="myForm.zipcode.$dirty && myForm.zipcode.$invalid">
+                                                            <span ng-show="myForm.zipcode.$error.required">Zip Code is Required.</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <div>
+                                                        	<select tabindex="15" class="form-control">
+                                                        		<option value="840">UNITED STATES</option>
+                                                        	</select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Div1">
+                                    </div>
+                                    <input type="submit" value="Submit" tabindex="17" class="btn btn-primary" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/registration-img.png" class="img-responsive hidden-xs hidden-sm" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+</div>
+
+</div>

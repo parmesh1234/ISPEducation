@@ -1,0 +1,37 @@
+[
+	{
+		"setId":1,
+		"question":"What is the value of the 7 in the following number? 850,765",
+		"options": ["70", "7", "7000", "700"],
+		"answer": 3,
+		"explain": "Since 850,765 = 800,000 + 50,000 + 700 + 60 + 5"
+	},
+	{
+		"setId":2,
+		"question":"Is 7 & 9 even or odd?",
+		"options": ["Even", "Odd", "Can't Say", "Dont know"],
+		"answer": 1,
+		"explain":"As both the 7 & 9 are odd numbers"
+	},
+	{
+		"setId":3,
+		"question":"In the number 5,281,946 what is the value of the 3rd place?",
+		"options": ["100", "10,000", "1,000,000", "1,000"],
+		"answer": 0	,
+		"explain":"Since third value is in Hundreds place"
+	},
+	{
+		"setId":4,
+		"question":"Is 12 + 50 even or odd?",
+		"options": ["Even", "Odd", "Can't Say", "Dont know"],
+		"answer": 0,
+		"explain":"As both the numbers 12 & 50 are even sum is also even"
+	},
+	{
+		"setId":5,
+		"question":"What does the 3 represent in the number below? 3051",
+		"options": ["3", "30", "300", "3000"],
+		"answer": 3,
+		"explain":"Since 3051 = 3000 + 50 + 1"
+	}
+]

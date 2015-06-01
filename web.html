@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+  		<meta charset="utf-8">
+  		<title>Learn Education | Home</title>
+  		<link rel="stylesheet" href="javascript/bootstrap.min.css">
+  		<script src="javascript/jquery.min.js"></script>
+  		<script src="javascript/bootstrap.min.js"></script>
+  		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+  		<script src="javascript/angular.min.js"></script>
+  		<script src="javascript/angular-route.js"></script>
+  		<link rel="stylesheet" href="design.css">
+  		<script src="app.js"></script>
+  		<script src="controller-learnhome.js"></script>
+  		<link href="js-image-slider.css" rel="stylesheet" >
+    	<script src="js-image-slider.js"></script>
+    	<script src="animation.js"></script>
+    	<script src="controller-learnlogin.js"></script>
+    	<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+    	<script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+    	<script src="controller-learnsignup.js"></script>
+    	<script src="controller-learnsampletest4.js"></script>
+    	<script src="controller-learnsetque.js"></script>
+    	<script src="controller-learnreports.js"></script>
+
+    	<script src="https://dl.dropboxusercontent.com/u/8824346/angular-timer.js"></script>
+		<script src="https://dl.dropboxusercontent.com/u/8824346/ui-bootstrap-tpls.js"></script>
+	</head>
+	<body>
+	<section class="menu-bar">
+		<div class="container">
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+				<a href="#/home"><img src="img/logo.png" class="logo-img"></a>
+			</div>
+			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+				<nav id="primary_nav_wrap" class="mainmenu">
+					<ul class="main-menu">
+						<li><a class="amain"><font color="white">Main Menu</font></a>
+							<ul class="main-menu-list">
+								<li><a href="#/home/login">LogIn</a></li>
+								<li><a href="#/home/SignUp">SignUp</a></li>
+								<li><a href="#/home">Home</a></li>
+								<li><a href="#/home/Reports">Reports</a></li>
+								<li><a href="">Sample Test</a>
+									<ul class="main-menu">
+										<li><a href="#/home/SampleTest">Mathematics</a></li>
+										<li><a href="#">Physics</a></li>
+										<li><a href="#">Chemistry</a></li>
+									</ul>
+								</li>
+								<li><a href="#/home/AboutUs">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#/home/dashboard">DashBoard</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<div ng-view></div>
+</html>
