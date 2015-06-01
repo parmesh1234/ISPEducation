@@ -126,3 +126,20 @@ myApp.factory('quizFactory', function($http) {
 		}
 	};
 });
+
+quizApp.controller('postingdata', function ($scope, $http) {
+
+    $http.defaults.useXDomain = true;
+    $http.post('ques.json', { setId: "1" }).
+  success(function (data, status, headers, config) {
+      $scope.questions = data;
+
+  }).
+  error(function (data, status, headers, config) {
+
+      alert(data);
+      alert(status);
+
+  });
+});
+
